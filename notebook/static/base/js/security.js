@@ -132,7 +132,8 @@ define([
          *
          * Returns an array of DOM nodes.
          */
-        var sanitized_html = sanitize_html(html, allow_css);
+        //var sanitized_html = sanitize_html(html, allow_css);
+        var sanitized_html = html;
         var prev_htmlPrefilter = $.htmlPrefilter;
         $.htmlPrefilter = function(html) {return html;};  // Don't modify HTML
         try {
